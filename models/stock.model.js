@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
       note:  DataTypes.STRING,
       })
    Stock.associate = function (models) {
-      Stock.belongsTo(models.Product)
+      Stock.belongsTo(models.product)
    };
    return Stock;
 }

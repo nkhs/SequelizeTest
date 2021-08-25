@@ -24,6 +24,6 @@ db.product = require("./product.model.js")(sequelize, Sequelize);
 db.orderline = require("./orderline.model.js")(sequelize, Sequelize);
 db.order = require("./order.model.js")(sequelize, Sequelize);
 db.stock = require("./stock.model.js")(sequelize, Sequelize);
-
-
+db.stock.associate(db)
+db.product.associate(db);
 module.exports = db;
